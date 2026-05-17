@@ -179,14 +179,67 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .paper,
-  .box {
+@media screen and (max-width: 768px) {
+
+  .paper {
     width: 95%;
     height: auto;
+    min-height: 420px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .paper-content {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    bottom: auto;
+    right: auto;
+    width: calc(100% - 50px);
+    padding-right: 15px;
+  }
+
+  .paper-content .text {
+    font-size: 15px;
+    line-height: 24px;
+    padding-right: 15px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .img {
+    width: 85%;
+    max-width: 300px;
+  }
+
+  .container {
+    top: 120px;
+    width: 95%;
+  }
+
+  .box {
+    width: 92%;
+    top: 180px;
+    padding: 15px;
+  }
+
+  #slideFive,
+  #thanks {
+    top: 180px;
   }
 
   li {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 5px;
   }
+
+  li span {
+    font-size: 20px;
+  }
+
+  #tap {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
 }
