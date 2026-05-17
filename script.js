@@ -101,7 +101,7 @@ const _slideTwo = function () {
 
     })
 
-  }, 40000);
+  }, 4000);
 };
 
 const _slideThree = function () {
@@ -126,7 +126,7 @@ const _slideThree = function () {
 
     })
 
-  }, 43000);
+  }, 4300);
 }
 
 function getRandomPosition(element) {
