@@ -24,7 +24,7 @@ function playMusic() {
 
 let currentSlide = 0;
 
-document.body.onclick = function () {
+document.body.addEventListener('click', function () {
   playMusic();
 }, { once: true });
 
@@ -87,11 +87,12 @@ const _slideTwo = function () {
   setTimeout(function () {
     tap.classList.remove('d-none');
 
-    document.body.addEventListener('click', function () {
+    document.body.addEventListener('click', function handleSlideTwo() {
 
       slideTwo.classList.replace('animate__zoomInDown', 'animate__fadeOutLeft');
       slideTwo.classList.remove('animate__delay-2s', 'animate__slow');
       tap.classList.add('d-none');
+      document.body.removeEventListener('click', handleSlideTwo);
 
       setTimeout(function () {
         slideTwo.remove();
