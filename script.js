@@ -24,7 +24,7 @@ function playMusic() {
 
 let currentSlide = 0;
 
-document.body.addEventListener('click', function startAll() {
+document.body.onclick = function () {
   playMusic();
 }, { once: true });
 
@@ -203,14 +203,14 @@ new TypeIt("#text1", {
   strings: ["\n\nHappy Birthday prety girl.\n\nI don’t think u truly realize how much light u carry around with u. Some people walk into a room and simply exist, but u somehow make places feel softer, calmer, happier — just by being there.\n\nur one of the few people who can make ordinary moments feel important. A simple conversation with u never really feels special.Somehow ur laugh stays in people’s heads long after the moment ends, and ur presence has this strange way of making bad days feel lighter.\n\nI hope this year gives u back even a fraction of the kindness, care, and warmth u give to everyone else so naturally."],
   startDelay: 4000,
   speed: 75,
-  waitUntilVisible: true
+  waitUntilVisible: false
 }).go();
 
 new TypeIt("#text2", {
   strings: ["And honestly, I hope u never lose the little things that make u *u*:\n\nthe way u r chaldish,\nthe way u smile when ur genuinely happy,\nthe way u try to change ur voice ,\nthe way ur existence quietly becomes important to people without u even realizing it.\n\nu deserve memories that make u smile randomly months later.\nu deserve people who choose u with certainty.\nu deserve peace in ur mind, softness in ur heart, and happiness that doesn’t leave quickly.\n\nSo today, I just hope you feel loved.\nNot because it’s ur birthday,\nbut because someone as beautiful as you — inside and out — genuinely deserves to.\n\nHappy Birthday again.\nAnd thank u for being u.", "- Wish u all the best"],
   startDelay: 2000,
   speed: 75,
-  waitUntilVisible: true
+  waitUntilVisible: false
 }).go();
 
 new TypeIt("#thanks", {
